@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+:root {
+    --primary: #161519;
+    --sencudary: #d5a353;
+    --font-title: 'Oswald', sans-serif;
+    --font-text: 'Poppins', sans-serif;
+    --size-h1: 48px;
+    --size-h2: 32px;
+    --size-h3: 28px;
+    --size-h4: 24px;
+    --size-h5: 20px;
+    --size-h6: 18px;
+    --size-text: 16px;
+}
+
+header {
+    
+    z-index: 2;
+    padding: 1.5vh 10vw;
+    background-color: var(--primary);
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo>span {
+    font-weight: bold;
+    font-size: var(--size-h2);
+    font-family: var(--font-title);
+    color: var(--sencudary);
+}
+
+
+header>nav {
+    display: flex;
+    gap: 1.9rem;
+    font-family: var(--font-title);
+}
+
+header>nav>a {
+    all: unset;
+    cursor: pointer;
+    font-size: var(--size-h6);
+    font-weight: 200;
+    transition: .2s;
+}
+
+header>nav>a:hover {
+    border-bottom: 1px solid white;
+}
+/* GALERIA */
+.galery>a>img{
+    height: 400px;
+}
+
+.galery {
+    padding-top: 35px;
+    display: grid;
+    gap: 35px;
+
+    grid-template-areas:
+        "image1 image2 image2"
+        "image3 image3 image4"
+        "image5 image6 image6"
+        "image7 image7 image7";
+}
+
+.galery:hover>:not(:hover) {
+    opacity: .4;
+}
+
+.image1 {
+    grid-area: image1;
+    transition: .5s;
+}
+
+.image2 {
+    grid-area: image2;
+    transition: .5s;
+}
+
+.image3 {
+    grid-area: image3;
+    transition: .5s;
+}
+
+.image4 {
+    grid-area: image4;
+    transition: .5s;
+}
+
+.image5 {
+    grid-area: image5;
+    transition: .5s;
+}
+
+.image6 {
+    grid-area: image6;
+    transition: .5s;
+}
+
+.image7 {
+    grid-area: image7;
+    transition: .5s;
+}
+/* Card Das Modalidades */
+.card {
+    width: 80vw;
+    height: auto;
+    display: flex;
+
+    align-items: center;
+    gap: 30px;
+}
+
+.card>img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.CardTitle {
+    font-size: var(--size-h1);
+    font-family: var(--font-title);
+    font-weight: bold;
+}
+
+.CardSubtitle {
+    font-family: var(--font-text);
+    font-size: var(--size-text);
+    font-weight: 600;
+}
+
+.CardText {
+    color: #f9f8fa;
+    font-family: var(--font-text);
+    font-size: var(--size-text);
+    font-weight: 200;
+}
+
+li {
+    color: #f9f8fa;
+    font-family: var(--font-text);
+    font-size: var(--size-text);
+    font-weight: 200;
+    transform: translateX(2.5%);
+    text-align: start;
+}
+
+.container {
+    padding-top: 50px;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* Comentari e Depoimentos */
+.cardComent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.textComent {
+    font-family: var(--font-text);
+    font-size: var(--size-text);
+    text-align: center;
+    border-radius: 1%;
+    border-radius: 1%;
+    padding: 2rem;
+    color: var(--primary);
+    background-color: #faf8f8;
+    line-height: 2rem;
+}
+
+.imgComent {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.nameComent {
+    font-family: var(--font-title);
+    color: var(--sencudary);
+    font-size: var(--size-h4);
+}
+
+.datePerson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-20%);
+}
+/* Professores Card */
+.personalTitle {
+    font-weight: bold;
+    font-size: var(--size-h4);
+    color: var(--sencudary);
+    text-align: center;
+  }
+  .personalTitle>span{
+    color: #f9f8fa;
+  }
+  .personal{
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .personal > img {
+   width: 100%;
+    object-fit: cover;
+  
+  }
+  .personalText{
+    width: 100%;
+    font-family: var(--font-text);
+    font-weight: 200;
+    line-height: 2rem;
+    text-align: center;
+  }
+  @media(max-width:1600px){
+    .personal > img {
+        width: 80%;
+         object-fit: cover;
+       
+       }
+  }
+
+@media(max-width:1200px) {
+    .card {
+        flex-wrap: wrap;
+    }
+    header{
+        flex-direction: column;
+    }
+    .galery>a>img{
+        height: 300px;
+    }
+   
+}
+@media(max-width:800px){
+
+    .galery>a>img{
+        height: 200px;
+    }
+
+}
+@media(max-width:600px){
+    .title{
+        font-size: 10px;
+    }
+    .galery>a>img{
+        height: 150px;
+    }
+    
+    .card>img{
+        width: 300px;
+        height: 400px;
+        object-fit: cover;
+        margin: auto;
+    }
+    .CardTitle {
+        font-size: var(--size-h3);
+        font-family: var(--font-title);
+        font-weight: bold;
+    }
+}
+
+@media(max-width:400px){
+    .galery{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "image1"
+        "image2"
+        "image3"
+        "image4"
+        "image5"
+        "image6"
+        "image7";
+       
+    }
+    .galery>a{
+        display: flex;
+        justify-content: center;
+    }
+    .galery>a>img{
+        width: 80%;
+        height: 100%;
+        object-fit: contain;
+    
+    }
+    
+}
