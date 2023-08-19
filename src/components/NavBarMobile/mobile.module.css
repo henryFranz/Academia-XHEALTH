@@ -1,74 +1,69 @@
-@media(max-width:550px){
-    header{
-       
-        display: flex;
-        align-items: self-start;
-        gap: 1rem;
-    }
-    nav{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
-.logo>span {
-    font-weight: bold;
-    font-size: var(--size-h2);
-    font-family: var(--font-title);
-    color: var(--sencudary);
-}
-
-.menu{
-    width: 40px;
-    height: 30px;
-    border: 1px solid white;
-    border-radius: 5px;
+@media (max-width: 550px) {
+  header {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    align-items: self-start;
+    gap: 1rem;
+  }
+  nav {
+    width: 100%;
+    display: flex;
     align-items: center;
-    transition: 0.4s;
-    cursor: pointer;
+    justify-content: space-between;
+  }
 }
-.menu>span{
-    width: 60%;
-    height: 1px;
-    background-color: white;
-}
-
-
-.menu>div{
-    width: 5%;
-    height: 1px;
-    background-color: white;
-    
-}
-.menu>div:nth-child(1){
-    transform: rotate(45deg);
-    position: absolute;
-
-}
-.menu>div:nth-child(2){
-    transform: rotate(135deg);
-    position: absolute;
+.logo > span {
+  font-weight: bold;
+  font-size: var(--size-h2);
+  font-family: var(--font-title);
+  color: var(--sencudary);
 }
 
-
-
-.links{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+.menu {
+  width: 40px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.4s;
+  cursor: pointer;
 }
-.links>a{
-    all: unset;
-    cursor: pointer;
-    font-size: var(--size-h6);
-    font-weight: 200;
-    transition: .2s;
+.menu > span {
+  width: 60%;
+  height: 1px;
+  background-color: white;
 }
 
-.links>a:hover {
-    border-bottom: 1px solid white;
+.menu > div {
+  width: 5%;
+  height: 1px;
+  background-color: white;
+}
+.menu > div:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+}
+.menu > div:nth-child(2) {
+  transform: rotate(135deg);
+  position: absolute;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.links > a {
+  all: unset;
+  cursor: pointer;
+  font-size: var(--size-h6);
+  font-weight: 200;
+  transition: 0.2s;
+  border-bottom: 1px solid #ffffff00;
+}
+
+.links > a:hover {
+  border-bottom: 1px solid white;
 }

@@ -15,7 +15,7 @@
 }
 
 .home {
-  background-image: url("../assets/Musculação.jpg");
+  background-image: url("/public/home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -191,18 +191,17 @@
   color: var(--sencudary);
   text-align: center;
 }
-.personal{
+.personal {
   display: flex;
-  flex-direction: column  ;
+  flex-direction: column;
   align-items: center;
   gap: 1.5rem;
 }
 .personal > img {
- width: 100%;
+  width: 100%;
   object-fit: cover;
-
 }
-.personalText{
+.personalText {
   width: 100%;
   font-family: var(--font-text);
   font-weight: 200;
@@ -250,15 +249,14 @@ footer > div:nth-child(2) > div {
 footer > div:nth-child(3) {
   text-align: center;
 }
-@media (max-width: 1600px){
+@media (max-width: 1600px) {
   .personals {
     grid-template-columns: repeat(2, 1fr);
   }
   .personal > img {
     width: 80%;
-     object-fit: cover;
-   
-   }
+    object-fit: cover;
+  }
 }
 @media (max-width: 1000px) {
   footer > div:nth-child(2) {
@@ -266,10 +264,10 @@ footer > div:nth-child(3) {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  .personals{
+  .personals {
     grid-template-columns: 1fr;
   }
-  .coments{
+  .coments {
     grid-template-columns: 1fr;
   }
 
@@ -300,13 +298,11 @@ footer > div:nth-child(3) {
     text-align: center;
   }
 }
-@media(max-width:700px){  
-
+@media (max-width: 700px) {
   .title {
-    font-size: var(--size-h2);  
+    font-size: var(--size-h2);
   }
 
-  
   .homeSubTitle {
     font-family: var(--font-title);
     font-size: 40px;
@@ -314,14 +310,10 @@ footer > div:nth-child(3) {
     text-align: center;
     width: 90vw;
   }
-  
 
-  
   .homeText {
     width: 90vw;
   }
-  
-
 }
 @media (max-width: 500px) {
   .days {
@@ -331,5 +323,4 @@ footer > div:nth-child(3) {
   footer > div:nth-child(1) {
     flex-direction: column;
   }
-
 }
