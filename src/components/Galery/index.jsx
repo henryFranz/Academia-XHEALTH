@@ -1,24 +1,14 @@
-import image1 from "../../assets/image1.png";
-import image2 from "../../assets/image2.png";
-import image3 from "../../assets/image3.png/";
-import image4 from "../../assets/image4.png/";
-import image5 from "../../assets/image5.png/";
-import image6 from "../../assets/image6.png/";
-import image7 from "../../assets/image7.png/";
-
 import { Link } from "react-router-dom";
 import style from "../index.module.css";
 
-
 export default function Galery() {
-
   return (
     <>
       <div className={style.galery}>
         <Link to="/modalidades/1" className={style.image1}>
           {" "}
           <img
-            src={image1}
+            src="/image1.png"
             alt=""
             data-aos-duration="1000"
             data-aos="fade-down-right"
@@ -27,7 +17,7 @@ export default function Galery() {
         <Link to="/modalidades/2" className={style.image2}>
           {" "}
           <img
-            src={image2}
+            src="/image2.png"
             alt=""
             data-aos-duration="1000"
             data-aos="fade-down-left"
@@ -36,7 +26,7 @@ export default function Galery() {
         <Link to="/modalidades/3" className={style.image3}>
           {" "}
           <img
-            src={image3}
+            src="/image3.png"
             alt=""
             data-aos-duration="1000"
             data-aos="fade-right"
@@ -45,7 +35,7 @@ export default function Galery() {
         <Link to="/modalidades/4" className={style.image4}>
           {" "}
           <img
-            src={image4}
+            src="/image4.png"
             alt=""
             data-aos-duration="1000"
             data-aos="fade-left"
@@ -54,7 +44,7 @@ export default function Galery() {
         <Link to="/modalidades/5" className={style.image5}>
           {" "}
           <img
-            src={image5}
+            src="/image5.png"
             alt=""
             data-aos-duration="1000"
             data-aos="fade-right"
@@ -63,7 +53,7 @@ export default function Galery() {
         <Link to="/modalidades/6" className={style.image6}>
           {" "}
           <img
-            src={image6}
+            src="/image6.png"
             alt=""
             data-aos-duration="1000"
             data-aos="fade-left"
@@ -72,7 +62,7 @@ export default function Galery() {
         <Link to="/modalidades/7" className={style.image7}>
           {" "}
           <img
-            src={image7}
+            src="/image7.png"
             alt=""
             data-aos-duration="1000"
             data-aos="fade-up"
@@ -82,4 +72,3 @@ export default function Galery() {
     </>
   );
 }
-
